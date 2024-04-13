@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hind Madurai", sans-serif;
+    font-size: 16px;
+}
+
+:root{
+    --peachPuff: #FFDAB9;
+    --white: #FFFFFF;
+    --textStrikeThrought: #A9A9A9;
+    --lvory: #FFFFF0;
+    --skyBlue: rgb(30, 144, 255);
+}
+
+/* Grid  12 columns*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.borderCorner{
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--lvory);
+}
+
+.app{
+    /* background-color: var(--skyBlue); */
+    width: 400px;
+    height: fit-content ;
+    box-shadow: 1px 2px 4px var(--slateGrey);
+    background-image: linear-gradient(0deg,rgba(30, 144, 255, 0.7), rgba(30, 144, 255, 0.8) );
+    margin-top: 16px;
+}
+
+.header{
+    text-align: center;
+    padding: 18px 18px;
+}
+
+.header_title{
+    margin: 0 0 16px 0;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.header_time{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.content{
+    padding: 18px 36px;
+}
+
+.content_header{
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.content_addTasks{
+    margin-bottom: 8px;
+    height: 46px;
+}
+
+.content_taskComplete{
+    margin-bottom: 16px;
+}
+
+.content_taskComplete-number{
+    font-weight: 600;
+}
+
+.Tasks{
+    outline: none;
+    border: none;
+    height: 100%;
+    padding-left: 8px;
+}
+
+.addTask{
+    height: 100%;
+    width: 46px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    background-color: var(--lvory);
+}
+
+.content_printTask{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    background-color: var(--white);
+    height: fit-content;
+    padding: 8px 8px;
+}
+
+.content_printTask-left{
+    display: flex;
+    align-items: center;
+    padding-left: 6px;
+}
+
+.content_printTask-checkbox{
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+}
+
+.content_printTask-task{
+    word-break: break-word;
+    line-height: 1.8rem;
+}
+
+.textStrikeThrought{
+    text-decoration: line-through;
+    color: var(--textStrikeThrought);
+}

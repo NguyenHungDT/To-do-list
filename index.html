@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>to-do-list</title>
+        <link rel="stylesheet" href="./style/main.css">
+        <link rel="stylesheet" href="./style/animation.css">
+        <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="app borderCorner">
+            <div class="header">
+                <h2 class="header_title">My day</h2>
+                <p class="header_time">Thursday 04, 04, 2024</p>
+            </div>
+            
+            <div class="content">
+                <h3 class="content_header">To do list:</h3>
+                <div class="content_addTasks">
+                    <input type="text" placeholder="Tasks" class="Tasks borderCorner col-10">
+                    <button class="addTask borderCorner col-2">Add</button>
+                </div>
+
+                <div class="content_taskComplete">
+                    You have 
+                    <span class="content_taskComplete-number">0</span>
+                    task(s) to complete:
+                </div>
+
+                <div class="content_print">
+                    <!-- <div class="content_printTask borderCorner">
+                        <div class="content_printTask-left">
+                            <input type="checkbox" class="content_printTask-checkbox"> 
+                            <p class="content_printTask-task">Học lập trình web</p>
+                        </div>
+                        <i class="ti-close content_printTask-right"></i>
+                    </div> -->
+                   
+                    
+                </div>
+            </div>
+        </div>
+        <script src="./behavior/main.js"></script>
+        
+    </body>
+</html>
